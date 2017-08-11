@@ -27,6 +27,7 @@ console.log(blankLine);
 
 // Part Two Minesweeper Project
 
+// print board, each nested array on single line, elements joined by pipe
 const printBoard = board => {
 	console.log("Current Board:");
 	console.log(board[0].join(" | "));
@@ -34,6 +35,7 @@ const printBoard = board => {
 	console.log(board[2].join(" | "));
 }
 
+// board array - three nested arrays with three elemenst each
 const board = [
 	[" ", " ", " "], 
 	[" ", " ", " "], 
@@ -42,6 +44,7 @@ const board = [
 
 printBoard(board);
 
+// hard code - changed elements in nested arrays
 board [0][1] = "1";
 board [2][2] = "B";
 
